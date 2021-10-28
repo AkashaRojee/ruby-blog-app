@@ -13,4 +13,17 @@ RSpec.describe "Users", type: :request do
       expect(response.body).to include('Here is a list of users.')
     end
   end
+
+  describe "GET /show" do
+    before(:example) { get user_path("1") }
+    it "response status is correct" do
+      expect(response).to have_http_status(:ok)
+    end
+    it "rendered template is correct" do
+      expect(response).to render_template('show')
+    end
+    it "placeholder text is correct" do
+      expect(response.body).to include('Here is the given user.')
+    end
+  end
 end
