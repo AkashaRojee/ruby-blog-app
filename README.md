@@ -1,24 +1,63 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Blog App
 
-Things you may want to cover:
+This project is a blog app built using Ruby on Rails, as part of Microverse projects.
 
-* Ruby version
+It shows the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-* System dependencies
+## Things done so far
 
-* Configuration
+### 1. Set up routes and controllers
 
-* Database creation
+## Built With
 
-* Database initialization
+- Major languages: Ruby
+- Frameworks: Rails
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+To get a local copy up and running, follow the steps below in your terminal.
 
-* Deployment instructions
+### Prerequisites
 
-* ...
+- Ruby
+- Rails
+
+### Setup
+
+Clone the project:
+
+```
+git clone https://github.com/AkashaRojee/ruby-blog-app.git
+```
+
+### Deployment
+
+To serve the website:
+
+```
+rails server
+```
+
+## Author
+
+👤 **Akasha Rojee**
+
+- GitHub: [@AkashaRojee](https://github.com/AkashaRojee)
+- Twitter: [@AkashaRojee](https://twitter.com/AkashaRojee)
+- LinkedIn: [Akasha Rojee](https://linkedin.com/in/AkashaRojee)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](/../../../issues)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
