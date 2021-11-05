@@ -1,7 +1,9 @@
 <%= render partial: 'user', object: @user %>
 
-<p>Bio</p>
-<%= @user.bio %><br><br>
+<div class="user-bio flex-col">
+  <h3>Bio</h3>
+  <%= @user.bio %>
+</div>
 
 <% @posts.each do |post| %>
   Post # <%= post.id %><br><br>

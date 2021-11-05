@@ -10,6 +10,11 @@
   flex-direction: row;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .align-end {
   align-self: flex-end;
 }
