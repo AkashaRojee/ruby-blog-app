@@ -1,12 +1,14 @@
-<%= user.photo %><br>
-<%= user.name %><br>
-<%= user.posts_counter %><br>
+<%= @user.photo %><br>
+<%= @user.name %><br>
+<%= @user.posts_counter %><br>
 
 <p>Bio</p>
-<%= user.bio %><br>
+<%= @user.bio %><br><br>
 
 <% @posts.each do |post| %>
-  Post #<br>
-  <%= post.text %><br>
-  Comments: <%= post.comments_counter %> Likes: <%= post.likes_counter %>
+  Post # <%= post.id %><br><br>
+  <%= post.text %><br><br>
+  Comments: <%= post.comments_counter %> Likes: <%= post.likes_counter %><br><br>
 <% end %>
+
+<%= link_to "See all posts" %>
