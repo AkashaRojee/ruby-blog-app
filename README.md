@@ -10,6 +10,10 @@ It shows the list of posts and empower readers to interact with them by adding c
 
 ### 1. Set up routes and controllers
 
+### 2. Add controllers specs
+
+### 3. Set up data models
+
 ## Built With
 
 - Major languages: Ruby
