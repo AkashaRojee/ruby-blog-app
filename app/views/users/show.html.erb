@@ -1,1 +1,12 @@
-<h1>Here is the given user.</h1>
+<%= user.photo %><br>
+<%= user.name %><br>
+<%= user.posts_counter %><br>
+
+<p>Bio</p>
+<%= user.bio %><br>
+
+<% @posts.each do |post| %>
+  Post #<br>
+  <%= post.text %><br>
+  Comments: <%= post.comments_counter %> Likes: <%= post.likes_counter %>
+<% end %>
