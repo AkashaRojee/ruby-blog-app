@@ -14,6 +14,8 @@ It shows the list of posts and empower readers to interact with them by adding c
 
 ### 3. Set up data models
 
+### 4. Add methods in data models to process data
+
 ## Built With
 
 - Major languages: Ruby
@@ -55,8 +57,6 @@ rails server
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](/../../../issues)
 
 ## Show your support
 
