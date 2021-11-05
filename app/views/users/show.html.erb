@@ -1,6 +1,4 @@
-<%= @user.photo %><br>
-<%= @user.name %><br>
-<%= @user.posts_counter %><br>
+<%= render partial: 'user', object: @user %>
 
 <p>Bio</p>
 <%= @user.bio %><br><br>
