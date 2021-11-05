@@ -6,9 +6,19 @@
 </div>
 
 <% @posts.each do |post| %>
-  Post # <%= post.id %><br><br>
-  <%= post.text %><br><br>
-  Comments: <%= post.comments_counter %> Likes: <%= post.likes_counter %><br><br>
+  <div class="post flex-col">
+    <div class="post-id">
+      <h3>Post #<%= post.id %></h3>
+    </div>
+    <div class="post-text">
+      <%= post.text %>
+    </div>
+    <div class="post-stats align-end">
+      Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %>
+    </div>
+  </div>
 <% end %>
 
-<%= link_to "See all posts" %>
+<div class="user-posts">
+  <%= link_to "See all posts", user_posts_path(@user.id)%>
+</div>
