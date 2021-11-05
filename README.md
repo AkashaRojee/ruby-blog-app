@@ -16,6 +16,8 @@ It shows the list of posts and empower readers to interact with them by adding c
 
 ### 4. Add methods in data models to process data
 
+### 5. Add views
+
 ## Built With
 
 - Major languages: Ruby
