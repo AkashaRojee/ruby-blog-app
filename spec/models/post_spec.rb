@@ -31,4 +31,11 @@ RSpec.describe Post, type: :model do
       expect(subject).to_not be_valid
     end
   end
+
+  describe '#recent_comments' do
+    it 'should return recent comments' do
+      subject { Post.first }
+      expect(subject.recent_comments.length).to be < 6
+    end
+  end
 end
