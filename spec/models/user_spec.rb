@@ -10,7 +10,7 @@ RSpec.describe User, type: :model do
       subject.name = nil
       expect(subject).to_not be_valid
     end
-        
+
     it 'should not have a blank name' do
       subject.name = ' '
       expect(subject).to_not be_valid
@@ -28,5 +28,4 @@ RSpec.describe User, type: :model do
       expect(subject.recent_posts.length).to be < 4
     end
   end
-
 end

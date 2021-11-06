@@ -10,7 +10,7 @@ RSpec.describe Post, type: :model do
       subject.title = nil
       expect(subject).to_not be_valid
     end
-    
+
     it 'should not have a blank title' do
       subject.title = ' '
       expect(subject).to_not be_valid
