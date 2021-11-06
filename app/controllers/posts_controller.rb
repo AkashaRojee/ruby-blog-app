@@ -9,4 +9,16 @@ class PostsController < ApplicationController
     @post = @user.posts.find(params[:id])
     @comments = @post.comments.all
   end
+
+  def new; end
+
+  def create
+    post = current_user.posts.new(post_params)
+  end
+
+  private
+  
+  def post_params
+    params.require(:data).permit(:title, :text)
+  end
 end
