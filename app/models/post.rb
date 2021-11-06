@@ -10,10 +10,6 @@ class Post < ApplicationRecord
     user.update(posts_counter: user.posts_counter + 1)
   end
 
-  def liked?(user_id)
-    likes.exists?(user_id: user_id)
-  end
-
   def recent_comments(limit = 5)
     comments.last(limit)
   end
