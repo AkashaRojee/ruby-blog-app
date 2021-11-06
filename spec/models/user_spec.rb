@@ -21,4 +21,12 @@ RSpec.describe User, type: :model do
       expect(subject).to_not be_valid
     end
   end
+
+  describe '#recent_posts' do
+    it 'should return recent posts' do
+      subject { User.first }
+      expect(subject.recent_posts.length).to be < 4
+    end
+  end
+
 end
