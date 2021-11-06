@@ -11,6 +11,10 @@
 
 </div>
 
+<div class="new-comment">
+  <%= render partial: "new_comment", post: @post %>
+</div>
+
 <div class="comments">
   <%= render partial: 'shared/comment', collection: @comments %>
 </div>
