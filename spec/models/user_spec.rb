@@ -10,6 +10,11 @@ RSpec.describe User, type: :model do
       subject.name = nil
       expect(subject).to_not be_valid
     end
+        
+    it 'should not have a blank name' do
+      subject.name = ' '
+      expect(subject).to_not be_valid
+    end
 
     it 'should have a integer posts counter greater than or equal to zero' do
       subject.posts_counter = -1
