@@ -7,7 +7,7 @@ class Post < ApplicationRecord
   has_many :comments, dependent: :destroy
 
   after_save :increment_counter
-  
+
   def increment_counter
     user.update(posts_counter: user.posts.count)
   end
