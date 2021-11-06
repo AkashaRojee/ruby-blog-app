@@ -14,10 +14,18 @@ class PostsController < ApplicationController
 
   def create
     post = current_user.posts.new(post_params)
+
+    respond_to do |format|
+      format.html do
+        if post.save
+          redirect_to user_post_path(post.user.id, post.id)
+        end
+      end
+    end
   end
 
   private
-  
+
   def post_params
     params.require(:data).permit(:title, :text)
   end
