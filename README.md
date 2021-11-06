@@ -20,6 +20,8 @@ It shows the list of posts and empower readers to interact with them by adding c
 
 ### 6. Add forms to save new post and to add like and comment on post
 
+### 7. Add validations, specs, flash messages and eager loading
+
 ## Built With
 
 - Major languages: Ruby
