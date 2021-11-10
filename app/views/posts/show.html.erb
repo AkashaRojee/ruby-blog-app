@@ -8,7 +8,13 @@
   </div>
 
   <p><%= @post.text %></p>
+  
+  <%= render partial: "new_like", post: @post %>
 
+  </div>
+
+<div class="new-comment">
+  <%= render partial: "new_comment", post: @post %>
 </div>
 
 <div class="comments">
