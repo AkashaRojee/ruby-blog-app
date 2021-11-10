@@ -9,9 +9,9 @@
 5.times do |i|
 	user = User.create(name: "User ##{i}", bio: "A bio.", posts_counter: 3)
 	3.times do |j|
-		post = Post.create(title: "Awesome Post", text: "Lorem Ipsum Dolor Amet", user: user)
+		post = Post.create(title: "Awesome Post", text: "Lorem Ipsum Dolor Amet", user_id: user)
 		5.times do |j|
-			Comment.create(text: "Comment ##{j}", post: post, user: user)
+			Comment.create(text: "Comment ##{j}", post_id: post, user_id: user)
 		end
 	end
 end
