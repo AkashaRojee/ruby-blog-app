@@ -60,3 +60,5 @@ gem 'rspec', '~> 3.10'
 gem 'rspec-rails', '~> 5.0'
 
 gem 'rails-controller-testing'
+
+gem 'devise'
